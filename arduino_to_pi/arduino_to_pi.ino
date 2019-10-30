@@ -1,4 +1,12 @@
-#include <CapacitiveSensor .h>
+#include <CapacitiveSensor .h> // Ajouter la librairie correspondante aux capteurs CapacitiveSensor ...
+
+/* Vérifier le bon fonctionnement du script une fois la librairie download
+ * Créer des fonctions pour aérer le script
+ * Ajouter un sixième pays, un 6e capteur
+ * Voir comment monter le capteur sur le micro-contrôleur
+ * Essayer de tout mettre sur la Raspberry Pi pour simplifier l'installation hardware
+ * Re-tester
+*/
 
 CapacitiveSensor   cs_3_4 = CapacitiveSensor(4,3); // 1M resistor between pins 4 & 8, pin 8 is sensor pin, add a wire and or foil
 CapacitiveSensor   cs_5_6 = CapacitiveSensor(6,5);

@@ -5,6 +5,12 @@ import os
 import time
 import serial
 
+"""
+* Editer le code
+* Ajouter le carrousel d'images lorsque aucun événement n'est capté
+* Eviter le retour au terminal lorsqu'aucun événement n'est déclenché
+"""
+
 ard = serial.Serial(' ttyACM0 ',9600,timeout=10)
 video_status = 0
 #serial.inWaiting()
