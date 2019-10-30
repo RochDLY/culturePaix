@@ -37,104 +37,104 @@ void setup() {
 }
 
 void loop() {
- long sensor1 =  cs_3_4.capacitiveSensor(50);
- long sensor2 =  cs_5_6.capacitiveSensor(50);
- long sensor3 =  cs_7_8.capacitiveSensor(50);
- long sensor4 =  cs_9_10.capacitiveSensor(50);
- long sensor5 =  cs_11_12.capacitiveSensor(50);
+  long sensor1 =  cs_3_4.capacitiveSensor(50);
+  long sensor2 =  cs_5_6.capacitiveSensor(50);
+  long sensor3 =  cs_7_8.capacitiveSensor(50);
+  long sensor4 =  cs_9_10.capacitiveSensor(50);
+  long sensor5 =  cs_11_12.capacitiveSensor(50);
  
-if(sensor1 >= 1000){
-  digitalWrite(13 , HIGH);
-  random_number = generate_random_number1();
-  Serial.println(random_number);
-  delay(20000);
-  digitalWrite(13 , LOW);
-}
-
-if(sensor2 >= 1000){
-  digitalWrite(13 , HIGH);
-  random_number = generate_random_number2();
-  Serial.println(random_number);
-  delay(20000);
-  digitalWrite(13 , LOW);
-}
-
-if(sensor3 >= 1000){
-  digitalWrite(13 , HIGH);
-  random_number = generate_random_number3();
-  Serial.println(random_number);
-  delay(20000);
-  digitalWrite(13 , LOW);
-}
-
-if(sensor4 >= 1000){
-  digitalWrite(13 , HIGH);
-  random_number = generate_random_number4();
-  Serial.println(random_number);
-  delay(20000);
-  digitalWrite(13 , LOW);
-}
-
-if(sensor5 >= 1000){
-  digitalWrite(13 , HIGH);
-  random_number = generate_random_number5();
-  Serial.println(random_number);
-  delay(20000);
-  digitalWrite(13 , LOW);
-}
-delay(100);
+  if(sensor1 >= 1000){
+    digitalWrite(13 , HIGH);
+    random_number = generate_random_number1();
+    Serial.println(random_number);
+    delay(20000);
+    digitalWrite(13 , LOW);
+  }
+  
+  if(sensor2 >= 1000){
+    digitalWrite(13 , HIGH);
+    random_number = generate_random_number2();
+    Serial.println(random_number);
+    delay(20000);
+    digitalWrite(13 , LOW);
+  }
+  
+  if(sensor3 >= 1000){
+    digitalWrite(13 , HIGH);
+    random_number = generate_random_number3();
+    Serial.println(random_number);
+    delay(20000);
+    digitalWrite(13 , LOW);
+  }
+  
+  if(sensor4 >= 1000){
+    digitalWrite(13 , HIGH);
+    random_number = generate_random_number4();
+    Serial.println(random_number);
+    delay(20000);
+    digitalWrite(13 , LOW);
+  }
+  
+  if(sensor5 >= 1000){
+    digitalWrite(13 , HIGH);
+    random_number = generate_random_number5();
+    Serial.println(random_number);
+    delay(20000);
+    digitalWrite(13 , LOW);
+  }
+  delay(100);
 }
 
 String generate_random_number1(){
   while(1){
-int x = random(0, 5);
-//Serial.println(x);
-int y = 0;
-while(y<5){
-if(country1[x] == "0"){
-x = x + 1; 
-}
-else{
-String value = country1[x];
-country1[x] = "0";
-return value;
-}
-if(x>4){
-x = 0;
-}
-y++;
-}
-for(int i =0 ; i<5 ; i++){
-country1[i] = country11[i];}
+    int x = random(0, 5);
+    //Serial.println(x);
+    int y = 0;
+    while(y<5){
+      if(country1[x] == "0"){
+        x = x + 1; 
+      }
+      else{
+        String value = country1[x];
+        country1[x] = "0";
+        return value;
+      }
+      if(x>4){
+        x = 0;
+      }
+      y++;
+    }
+    for(int i =0 ; i<5 ; i++){
+    country1[i] = country11[i];}
   }
-return "0";
+  return "0";
 }
 
 
 
 String generate_random_number2(){
   while(1){
-int x = random(0, 5);
-//Serial.println(x);
-int y = 0;
-while(y<5){
-if(country2[x] == "0"){
-x = x + 1; 
-}
-else{
-String value = country2[x];
-country2[x] = "0";
-return value;
-}
-if(x>4){
-x = 0;
-}
-y++;
-}
-for(int i =0 ; i<5 ; i++){
-country2[i] = country22[i];}
+    int x = random(0, 5);
+    //Serial.println(x);
+    int y = 0;
+    while(y<5){
+      if(country2[x] == "0"){
+      x = x + 1; 
+    }
+    else{
+      String value = country2[x];
+      country2[x] = "0";
+      return value;
+    }
+    if(x>4){
+      x = 0;
+    }
+    y++;
+    }
+    for(int i =0 ; i<5 ; i++){
+    country2[i] = country22[i];}
   }
-return "0";
+  return "0";
 }
 
 
@@ -142,54 +142,54 @@ return "0";
 
 String generate_random_number3(){
   while(1){
-int x = random(0, 5);
-//Serial.println(x);
-int y = 0;
-while(y<5){
-if(country3[x] == "0"){
-x = x + 1; 
-}
-else{
-String value = country3[x];
-country3[x] = "0";
-return value;
-}
-if(x>4){
-x = 0;
-}
-y++;
-}
-for(int i =0 ; i<5 ; i++){
-country3[i] = country33[i];}
+    int x = random(0, 5);
+    //Serial.println(x);
+    int y = 0;
+    while(y<5){
+      if(country3[x] == "0"){
+      x = x + 1; 
+    }
+    else{
+      String value = country3[x];
+      country3[x] = "0";
+      return value;
+    }
+    if(x>4){
+      x = 0;
+    }
+    y++;
+    }
+    for(int i =0 ; i<5 ; i++){
+    country3[i] = country33[i];}
   }
-return "0";
+  return "0";
 }
 
 
 
 String generate_random_number4(){
   while(1){
-int x = random(0, 5);
-//Serial.println(x);
-int y = 0;
-while(y<5){
-if(country4[x] == "0"){
-x = x + 1; 
-}
-else{
-String value = country4[x];
-country4[x] = "0";
-return value;
-}
-if(x>4){
-x = 0;
-}
-y++;
-}
-for(int i =0 ; i<5 ; i++){
-country4[i] = country44[i];}
-  }
-return "0";
+    int x = random(0, 5);
+    //Serial.println(x);
+    int y = 0;
+    while(y<5){
+    if(country4[x] == "0"){
+    x = x + 1; 
+    }
+    else{
+      String value = country4[x];
+      country4[x] = "0";
+      return value;
+    }
+    if(x>4){
+    x = 0;
+    }
+    y++;
+    }
+    for(int i =0 ; i<5 ; i++){
+    country4[i] = country44[i];}
+ }
+ return "0";
 }
 
 
@@ -197,25 +197,25 @@ return "0";
 
 String generate_random_number5(){
   while(1){
-int x = random(0, 5);
-//Serial.println(x);
-int y = 0;
-while(y<5){
-if(country5[x] == "0"){
-x = x + 1; 
-}
-else{
-String value = country5[x];
-country5[x] = "0";
-return value;
-}
-if(x>4){
-x = 0;
-}
-y++;
-}
-for(int i =0 ; i<5 ; i++){
-country5[i] = country55[i];}
+    int x = random(0, 5);
+    //Serial.println(x);
+    int y = 0;
+    while(y<5){
+      if(country5[x] == "0"){
+      x = x + 1; 
+    }
+    else{
+      String value = country5[x];
+      country5[x] = "0";
+      return value;
+    }
+    if(x>4){
+    x = 0;
+    }
+    y++;
+    }
+    for(int i =0 ; i<5 ; i++){
+    country5[i] = country55[i];}
   }
-return "0";
+  return "0";
 }
