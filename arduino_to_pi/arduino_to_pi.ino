@@ -1,4 +1,4 @@
-#include <CapacitiveSensor .h> // Ajouter la librairie correspondante aux capteurs CapacitiveSensor ...
+#include <CapacitiveSensor.h> // Ajouter la librairie correspondante aux capteurs: CapacitiveSensor by Paul Stoffregen , Paul Badger 
 
 /* Vérifier le bon fonctionnement du script une fois la librairie download
  * Créer des fonctions pour aérer le script
