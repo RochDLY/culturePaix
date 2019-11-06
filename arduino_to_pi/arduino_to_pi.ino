@@ -53,7 +53,7 @@ void loop() {
  
   if(sensor1 >= 1000){
     digitalWrite(13 , HIGH);
-    random_number = generate_random_number1();
+    random_number = gen_random_number(country1, country11);
     Serial.println(random_number);
     delay(20000);
     digitalWrite(13 , LOW);
@@ -61,7 +61,7 @@ void loop() {
   
   if(sensor2 >= 1000){
     digitalWrite(13 , HIGH);
-    random_number = generate_random_number2();
+    random_number = gen_random_number(country2, country22);
     Serial.println(random_number);
     delay(20000);
     digitalWrite(13 , LOW);
@@ -69,7 +69,7 @@ void loop() {
   
   if(sensor3 >= 1000){
     digitalWrite(13 , HIGH);
-    random_number = generate_random_number3();
+    random_number = gen_random_number(country3, country33);
     Serial.println(random_number);
     delay(20000);
     digitalWrite(13 , LOW);
@@ -77,7 +77,7 @@ void loop() {
   
   if(sensor4 >= 1000){
     digitalWrite(13 , HIGH);
-    random_number = generate_random_number4();
+    random_number = gen_random_number(country4, country44);
     Serial.println(random_number);
     delay(20000);
     digitalWrite(13 , LOW);
@@ -85,7 +85,7 @@ void loop() {
   
   if(sensor5 >= 1000){
     digitalWrite(13 , HIGH);
-    random_number = generate_random_number5();
+    random_number = gen_random_number(country5, country55);
     Serial.println(random_number);
     delay(20000);
     digitalWrite(13 , LOW);
@@ -93,6 +93,32 @@ void loop() {
   delay(100);
 }
 
+// Fonction génératrice d'un chiffre aléatoire entre 0 et 5
+String gen_random_number(String liste1[], String liste2[]){
+  while(1){
+    int x = random(0, 5);
+    //Serial.println(x);
+    int y = 0;
+    while(y<5){
+      if(liste1[x] == "0"){
+        x = x + 1; 
+      }
+      else{
+        String value = liste1[x];
+        liste1[x] = "0";
+        return value;
+      }
+      if(x>4){
+        x = 0;
+      }
+      y++;
+    }
+    for(int i =0 ; i<5 ; i++){
+    liste1[i] = liste2[i];}
+  }
+  return "0";
+}
+/*
 String generate_random_number1(){
   while(1){
     int x = random(0, 5);
@@ -227,3 +253,4 @@ String generate_random_number5(){
   }
   return "0";
 }
+*/
