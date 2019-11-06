@@ -22,10 +22,9 @@ Si non, ouvrir le terminal:
 
 ## Fabriqué avec
 
-Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
-
-* [Arduino.ino](https://www.arduino.cc/en/main/software)
+* [Arduino.ino](https://www.arduino.cc/en/main/software) - Micro-contrôleur
 * [Python3](https://www.python.org/) - Editeur de textes (IDLE)
+* [Raspberry Pi](https://www.raspberrypi.org/) - Micro-ordinateur
 
 ## Auteurs
 
