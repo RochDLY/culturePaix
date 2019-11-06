@@ -10,7 +10,7 @@ import serial
 * Ajouter le carrousel d'images lorsque aucun événement n'est capté
 * Eviter le retour au terminal lorsqu'aucun événement n'est déclenché
 """
-
+# Récupération des informations de l'arduino dans la variable ard
 ard = serial.Serial(' ttyACM0 ',9600,timeout=10)
 video_status = 0
 #serial.inWaiting()
